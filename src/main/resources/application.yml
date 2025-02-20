@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://database-station-2.cbaqou6cmbcu.ap-south-1.rds.amazonaws.com/capstone
+    url: jdbc:postgresql://database-station-1.cbaqou6cmbcu.ap-south-1.rds.amazonaws.com/capstone
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver

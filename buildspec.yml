@@ -14,4 +14,4 @@ phases:
   build:
     commands:
       - echo "Running SonarCloud Analysis..."
-      - sonar-scanner -Dsonar.projectKey=devuniverse_sapphire-serverless-book-management-service -Dsonar.organization=devuniverse -Dsonar.sources=src/main/java/ -Dsonar.java.binaries=target/classes -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=64ee8b3f8a9b78636e253218d9051e9cd7f21ccb
+      - sonar-scanner -Dsonar.projectKey=devuniverse_sapphire-serverless-book-management-service -Dsonar.organization=devuniverse -Dsonar.sources=src/main/java/ -Dsonar.java.binaries=target/app_classes -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=64ee8b3f8a9b78636e253218d9051e9cd7f21ccb

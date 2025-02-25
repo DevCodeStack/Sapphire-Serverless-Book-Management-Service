@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    aws:
+      region:
+        static: ap-south-1
+      credentials:
+        access-key: ${AWS_ACCESS_KEY_ID}   # Use environment variables
+        secret-key: ${AWS_SECRET_ACCESS_KEY}
+  config:
+    import: aws-secretsmanager:dev/sapphire/postgresqldb
+  datasource:
+    url: jdbc:postgresql://${host}/capstone
+    username: ${user_name}
+    password: ${password}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+# comments
+# webhook updated

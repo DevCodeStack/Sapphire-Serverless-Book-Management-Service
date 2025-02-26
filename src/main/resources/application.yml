@@ -4,8 +4,8 @@ spring:
       region:
         static: ap-south-1
       credentials:
-        access-key: ${AWS_ACCESS_KEY_ID}   # Use environment variables
-        secret-key: ${AWS_SECRET_ACCESS_KEY}
+        access-key: ${ACCESS_KEY}   # Use environment variables
+        secret-key: ${SECRET_KEY}
   config:
     import: aws-secretsmanager:dev/sapphire/postgresqldb
   datasource:
